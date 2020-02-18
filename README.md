@@ -94,7 +94,7 @@ You can now safely perform maintenance on your mail server while the smart relay
 To release the mail again, remove the configuration and reload postfix. Afterwards, unhold the mails and send it with:
 
 ```
-postsuper -H all
+postsuper -H ALL
 postqueue -f
 ```
 
