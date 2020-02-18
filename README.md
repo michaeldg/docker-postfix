@@ -78,7 +78,7 @@ authenticate against the Gmail SMTP server(SMTP_USERNAME), the one on the email 
 #### Temporarily hold mail in queue
 
 You can use this docker instance as a smart relay host: The instances collects the mail from docker instances and relays it to your mail server. To perform maintenance on the actual mail serveryou may want to temporarily hold the mail to send it later.
-To do this, attach to the instance and edit `/etc/postfix/master.cnf`:
+To do this, attach to the instance and edit `/etc/postfix/main.cnf`:
 
 ```header_checks=static:HOLD```
 
